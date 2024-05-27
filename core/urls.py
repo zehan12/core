@@ -21,5 +21,6 @@ from django.urls import path
 urlpatterns = [
     path("", home, name="home"),
     path("index/", index, name="index"),
+    path("<name>", hello),
     path("admin/", admin.site.urls),
 ]
