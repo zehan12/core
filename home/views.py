@@ -5,3 +5,6 @@ from django.http import HttpResponse
 
 def home(request):
     return HttpResponse("server is running")
+
+def index(request):
+    return render(request,'index.html')
